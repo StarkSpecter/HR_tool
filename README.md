@@ -62,40 +62,40 @@
 ## 2.1. Repository:
 - Репозиторий - класс, содержащий хранилища данных (по одному для каждой модели). Его основные функции - продоставление доступа к классам которые он содержит и внесение изменений, сделанных локально в базу данных или загрузка данных из базы данных.
 
-candidates_repository, rounds_repository, interviews_repository, blacklist_repository - Репозитории, которые реализуют бизнес-логику конкретной модели данных.
+- candidates_repository, rounds_repository, interviews_repository, blacklist_repository - Репозитории, которые реализуют бизнес-логику конкретной модели данных.
 
 
-candidates_repository:
+- candidates_repository:
 
-get_all_candidates(): Возвращает список всех кандидатов.
-get_candidate(id string): Возвращает информацию о конкретном кандидате.
-add_candidate(name string, *необязательные параметры): Добавляет нового кандидата.
-update_candidate(id string, *необязательные параметры): Обновляет информацию о кандидате.
-delete_candidate(id string): Удаляет кандидата.
-get_recommendation(id string): Советует следует ли нанять кандидата.
-
-
-rounds_repository:
-
-get_round(string round_id): Возвращает информацию о раунде собеседования.
-get_rounds_for_candidate(string candidate_id): Возвращает все раунды собеседования кандидата.
-update_round(string round_id, *необязательные параметры): Изменяет информацию о раунде собеседования.
-create_round(string candidate_id, *необязательные параметры): Создает раунд собеседования для кандидата с переданным id.
-delete_round(string round_id): Удаляет информацию о раунде собеседования.
+- get_all_candidates(): Возвращает список всех кандидатов.
+- get_candidate(id string): Возвращает информацию о конкретном кандидате.
+- add_candidate(name string, *необязательные параметры): Добавляет нового кандидата.
+- update_candidate(id string, *необязательные параметры): Обновляет информацию о кандидате.
+- delete_candidate(id string): Удаляет кандидата.
+- get_recommendation(id string): Советует следует ли нанять кандидата.
 
 
-interviewers_repository:
+- rounds_repository:
 
-get_interviewer(string round_id): Возвращает информацию о собеседующих в раунде чей id передан.
-get_interviewers(): Возвращает информацию о всех доступных собеседующих.
-update_interviewer(string id): Обновляет информацию о собеседующем.
-create_interviewer(string id): Создает профиль собеседующего.
-delete_interviewer(string id): Удаляет профиль собеседующего.
+- get_round(string round_id): Возвращает информацию о раунде собеседования.
+- get_rounds_for_candidate(string candidate_id): Возвращает все раунды собеседования кандидата.
+- update_round(string round_id, *необязательные параметры): Изменяет информацию о раунде собеседования.
+- create_round(string candidate_id, *необязательные параметры): Создает раунд собеседования для кандидата с переданным id.
+- delete_round(string round_id): Удаляет информацию о раунде собеседования.
 
 
-blacklists_repository:
+- interviewers_repository:
 
-Waive(string id): Приостанавливает бан кандида с id.
-update_blacklist(string id): Обновляет информацию о бане.
-create_blacklist(string id): Создает бан.
-delete_blacklist(string id): Удаляет бан.
+- get_interviewer(string round_id): Возвращает информацию о собеседующих в раунде чей id передан.
+- get_interviewers(): Возвращает информацию о всех доступных собеседующих.
+- update_interviewer(string id): Обновляет информацию о собеседующем.
+- create_interviewer(string id): Создает профиль собеседующего.
+- delete_interviewer(string id): Удаляет профиль собеседующего.
+
+
+- blacklists_repository:
+
+- Waive(string id): Приостанавливает бан кандида с id.
+- update_blacklist(string id): Обновляет информацию о бане.
+- create_blacklist(string id): Создает бан.
+- delete_blacklist(string id): Удаляет бан.

@@ -65,7 +65,7 @@
 - candidates_repository, rounds_repository, interviews_repository, blacklist_repository - Репозитории, которые реализуют бизнес-логику конкретной модели данных.
 
 
-- candidates_repository:
+### candidates_repository:
 
 - get_all_candidates(): Возвращает список всех кандидатов.
 - get_candidate(id string): Возвращает информацию о конкретном кандидате.
@@ -75,7 +75,7 @@
 - get_recommendation(id string): Советует следует ли нанять кандидата.
 
 
-- rounds_repository:
+### rounds_repository:
 
 - get_round(string round_id): Возвращает информацию о раунде собеседования.
 - get_rounds_for_candidate(string candidate_id): Возвращает все раунды собеседования кандидата.
@@ -84,7 +84,7 @@
 - delete_round(string round_id): Удаляет информацию о раунде собеседования.
 
 
-- interviewers_repository:
+### interviewers_repository:
 
 - get_interviewer(string round_id): Возвращает информацию о собеседующих в раунде чей id передан.
 - get_interviewers(): Возвращает информацию о всех доступных собеседующих.
@@ -93,7 +93,7 @@
 - delete_interviewer(string id): Удаляет профиль собеседующего.
 
 
-- blacklists_repository:
+###  blacklists_repository:
 
 - Waive(string id): Приостанавливает бан кандида с id.
 - update_blacklist(string id): Обновляет информацию о бане.

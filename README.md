@@ -8,7 +8,7 @@
 Получить опыть разработки в ООП парадигме (и потрогать питона) :)
 
 ## 1. Модели данных:
-![DataModels](https://raw.github.com/StarkSpecter/HR_tool/screenshots/DataModels.png)
+![DataModels](https://github.com/StarkSpecter/HR_tool/blob/5facaeba43b5b04edc6878af0d72a43223359a20/screenshots/DataModels.png)
 
 ### Модель Candidate:
 - candidate_id (string): Уникальный идентификатор кандидата.
@@ -58,7 +58,7 @@
 
 
 ## 2. Бизнес-логика:
-![Repository](https://raw.github.com/StarkSpecter/HR_tool/screenshots/Repository.png)
+![Repository](screenshots/Repository.png)
 ## 2.1. Repository:
 - Репозиторий - класс, содержащий хранилища данных (по одному для каждой модели). Его основные функции - продоставление доступа к классам которые он содержит и внесение изменений, сделанных локально в базу данных или загрузка данных из базы данных.
 

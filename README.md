@@ -99,3 +99,7 @@
 - update_blacklist(string id): Обновляет информацию о бане.
 - create_blacklist(string id): Создает бан.
 - delete_blacklist(string id): Удаляет бан.
+
+
+###  Общая структура (примерно):
+![Structure](screenshots/Structure.png)
